@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Roboto:wght@400;700&display=swap');
+
+
+:root{
+    --key-color: #DC4137;
+    --black-color: #000;
+    --white-color: #ffffff;
+    --title-color:#2b2b2b;
+    --paragraph-color: #989898;
+  }
+  
+  *{
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'NanumBarunGothic';
+      overflow-x: hidden;
+  }
+  
+  body {position: relative;}
+  /*header*/
+  
+  .background_img {
+      background-image: url(img/chinatown-3273160\ 1.png);
+      width: 100%;
+      height: 440px;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .header_img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+  }
+
+  header .title {
+    margin-top: 200px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header .title h4 {
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+header .title h1 {
+    font-size: 64px;
+    font-family: 'Black Han Sans';
+    font-weight: 700;
+    margin-top: 18px;
+    color: var(--white-color);
+}
+  
+  header{
+      width: 100%;
+      min-height: 700px;
+      overflow: visible;
+  }
+  
+  header nav{
+      overflow: visible;
+      position: absolute;
+      top:0;
+      width: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+      padding-left: 40px;
+      padding-right: 40px;
+      height: 100px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  header nav img.logo{
+      width: 234px;
+  }
+  
+  header nav img.search{
+      width: 19px;
+  }
+  
+  header nav ul{
+      display: flex;
+      list-style: none;
+  }
+  
+  header nav .navigation{
+      font-weight: 600;
+      gap: 80px;
+  }
+  
+  header nav .utility{
+      font-weight: 300;;
+      gap: 48px;
+  }
+  
+  header nav a{
+      font-size: 18px;
+      text-decoration: none;
+      color: var(--white-color);
+  }
+  
+  .dropdown{}
+  .dropdown-btn {position: relative;}
+  .dropdown-submenu {
+      border-radius: 8px;
+      margin-top: 0px;
+      position: absolute;
+      transform: translateX(-30px);
+      display: none;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+  }
+  .dropdown-submenu a {
+      color: var(--title-color);
+      display: block;
+      padding: 9px;
+      text-align: center;
+      background-color: var(--white-color);
+  }
+  .dropdown-submenu a:hover {
+      background-color: rgb(228, 228, 228);
+  }
+  .dropdown:hover .dropdown-submenu {
+      position:absolute;
+      display: block;
+  }
+  /* main*/
+  main{
+	width: 1223px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+    margin-top: -80px;
+    overflow: visible;
+}
+
+hr {
+    opacity: 15%;
+}
+
+section {
+    overflow: visible;
+}
+
+/*로컬네비게이션*/
+
+section:nth-child(1)>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    color: #2b2b2b;
+}
+
+.local_navigation {
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.local_navigation img {
+    width: 24px;
+}
+
+.local_navigation img:nth-child(2) {
+    width: 12px;
+}
+
+.local_navigation span:nth-child(1) {
+}
+.local_navigation span:nth-child(2) {
+}
+
+/*차이나타운 제목*/
+.title_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.title_2>div {
+    display: flex; color: #2b2b2b;
+}
+
+.title_2>div div p {font-size: 24px; margin-top: 16px;}
+.title_2>div div h2 {font-size: 64px; margin-top: 2px;;}
+
+
+/* 사진*/
+
+.title_3 {
+    margin-top: 164px;
+}
+
+.title_4 {
+    margin-top: 864px;
+    position: relative;
+    overflow: visible;
+}
+
+.backgroud_4 {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    top: 1800px;
+    z-index: -1;
+    background-image: url(img/imgg/Group\ 164\ \(1\).svg);
+}
+
+.title_3 h5 {
+    margin-top: 129px;
+    transform: translateY(360px);
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+.title_4>div {
+    float: right;
+    transform: translateY(-40px);
+}
+
+.title_4 h5 {
+    margin-top: 129px;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.title_4 p {
+    width: 380px;
+    line-height: 160%;
+    color: #ffffff;
+}
+
+
+.title_3 p {
+    width: 380px;
+    line-height: 160%;
+    transform: translateY(360px);
+    color: #333333;
+}
+
+.photo {
+    width: 704px;
+    height: 686px;
+    box-shadow: #2b2b2b 0px 0px 16px;
+    float: right;
+    background-color: var(--white-color);
+    padding: 24px;
+}
+
+.photo_item {
+    width: 100%;
+    height: 88%;
+    background-image: url(img/image\ 115.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.photo figcaption  {margin-top: 30px;}
+
+.photo figcaption span:nth-child(1) {font-size: 24px; transform: translateY(12px);}
+.photo figcaption span:nth-child(2) {float: right; font-size: 36px;}
+.photo figcaption span:nth-child(2) span {font-weight: 900;font-size: 36px;}
+
+.photo_2 {width:714px;
+    height: 437px;
+    background-image: url(img/beach_small_1\ 1\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.title_5 {
+    margin-top: 500px;
+    color: #333333;
+    text-align: center;
+}
+
+.title_5 h5 {
+    margin-top: 700px;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+.title_5 p{
+    line-height: 160%;
+    color: #333333;
+}
+
+.food {
+    display: flex;
+}
+
+.red_background {
+    background-image: url(img/red-box.svg);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    transform: translateY(-370px);
+    z-index: -1;
+    left: 0;
+}
+
+.back {
+    background-image: url(img/차이나타운\ 1\ \(1\).svg);
+    position: absolute;
+    right: -60px;
+    z-index: -3;
+    transform: translateY(-900px);
+    width: 800px;
+    height: 800px;
+}
+
+.map {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.map .left {
+    float: left;
+}
+
+.map .right {
+    float: right; 
+    display: flex;
+    flex-direction: column;
+}
+
+.t {margin-bottom: 500px; opacity: 0;}
+
+.left span {}
+.left {color: var(--title-color); width:450px;}
+.left span {font-size: 16px; line-height: 160%;}
+.left h6 {font-size: 36px; line-height: 160%;}
+.left p {margin-top: 33px; line-height: 160%;}
+.left p {margin-top: 33px; line-height: 160%;}
+
+.food img:nth-child(1) {w}
+.food img:nth-child(2) {margin-right: 70px;}
+.food img:nth-child(3) {transform: translateY(-10px);}
+
+  /* footer*/
+  
+  footer{
+      background-image: url(img/footer.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      width: 100vw;
+      height: 30vh;
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  footer div.footer_info_one {
+      display: flex;
+      width: 416px;
+      justify-content: space-between;
+      margin-top: 48px;
+  }
+  
+  footer div.footer_info_one span {
+      color: var(--white-color);
+      font-size: 14px;
+  }
+  
+  footer div.footer_info_two {
+      display: flex;
+      width: 852px;
+      justify-content: space-between;
+      margin-top: 16px;
+  }
+  
+  footer div.footer_info_two span {
+      color: var(--white-color);
+      font-size: 14px;
+  }
+
+
+  
