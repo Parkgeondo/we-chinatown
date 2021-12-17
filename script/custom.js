@@ -100,7 +100,18 @@ $(function(){
     
   });
 
+$('.button_item').click(function(){
+  $(this).addClass('active')
+  $(this).siblings().removeClass('active')
 
+  $('.event_img').removeClass('active')
+  $('#' + $(this).attr('data-alt')).addClass('active')
+})
+
+$('.sub-btn div').click(function(){
+  $(this).addClass('active')
+  $(this).siblings().removeClass('active')
+})
 
 
 

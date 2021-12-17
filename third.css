@@ -151,6 +151,12 @@ header .title h1 {
     color: var(--title-color);
     font-weight: 900;
     border-radius: 8px 8px 0px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sub-btn div.active{
+    background-color: var(--white-color);
+    transition: all 0.2s ease-in-out;
 }
 
 .sub-btn div {
@@ -171,10 +177,7 @@ h2 { font-size: 22px; margin-top: 100px; color: #333333;}
     gap: 12px; 
     margin-right: 60px;
     margin-top: 16px;
-}
-
-.sub-btn div:nth-child(5) {
-    background-color: var(--white-color);
+    cursor: pointer;
 }
 
   /* main*/
@@ -192,6 +195,7 @@ hr {
 }
 
 section {
+    overflow: visible;
 }
 
 /*로컬네비게이션*/
@@ -239,6 +243,8 @@ hr {
     column-gap: 24px;
     margin-top: 108px;
     margin-bottom: 128px;
+    overflow: visible;
+    
 }
 #columns figure{
     display: inline-block;
@@ -247,10 +253,17 @@ hr {
     width: 288px;
     margin-bottom: 15px;
     padding: 0px;
+    transition: all 0.2s ease-in-out;
 }
+
+#columns figure:hover {
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 16px 16px;
+}
+
  #columns figure img{
     width: 100%;
 }
+
 #columns figure figcaption{
     padding: 0px 20px 20px 20px;
     margin-top: 11px;

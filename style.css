@@ -695,6 +695,7 @@ main .festival .buttons span:nth-of-type(1) {
     margin-right: 8px;
     border-radius: 100px;
     background-image: url(img/button1.png);
+    filter: grayscale(100%);
 }
 
 main .festival .buttons span:nth-of-type(2) {
@@ -704,6 +705,7 @@ main .festival .buttons span:nth-of-type(2) {
     margin-right: 8px;
     border-radius: 100px;
     background-image: url(img/button2.png);
+    filter: grayscale(100%);
 }
 
 main .festival .buttons span:nth-of-type(3) {
@@ -713,9 +715,26 @@ main .festival .buttons span:nth-of-type(3) {
     margin-right: 8px;
     border-radius: 100px;
     background-image: url(img/button3.png);
+    filter: grayscale(100%);
 }
 
+main .festival .buttons span {
+    transition: all 0.2 ease-in-out;
+}
 
+main .festival .buttons span.active {
+    filter: none;
+}
+
+.event_img {
+    display: none;
+    transition: all 0.2 ease-in-out;
+}
+
+.event_img.active {
+    display: block;
+    transition: all 0.2 ease-in-out;
+}
 
 /*notice*/
 
