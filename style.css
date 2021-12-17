@@ -411,14 +411,32 @@ main .recommend .recommend_left .recommend_btns label{
     cursor: pointer;
 }
 
-.recommend .background {position: absolute; top: 1000px; left: -16%; z-index: -1; width: 2080px;}
-
-input[id=recommend_tab1]:checked ~ label[for=recommend_tab1],
-input[id=recommend_tab2]:checked ~ label[for=recommend_tab2],
-input[id=recommend_tab3]:checked ~ label[for=recommend_tab3]{
-    background-color: var(--key-color);
-    color: var(--white-color);
+main .recommend .recommend_left .recommend_btns label:hover{
+    background-color: #DC4137;
+    color: white;
 }
+
+.recommend .background {position: absolute; top: 1000px; left: -16%; z-index: -1; width: 2080px;
+}
+
+  .map {
+      position: absolute;
+      top: 2140px;
+      right: 300px;
+  }
+
+  .map1 {
+display: none;
+}
+
+.map2 {
+    display: none;
+}
+
+.map3 {
+    display: none;
+}
+
 
 .recommend_box h5 {font-size: 24px; color: var(--white-color); font-weight: 900; display: inline;}
 .recommend_box h4 {font-size: 20px; color: var(--white-color); margin-top:30px;}
@@ -534,6 +552,7 @@ main .recommend .recommend_left .recommend_box .sinsung {
 
 
 
+
 /*food*/
 main .food {width: 100%; height: 650px;}
 
@@ -582,6 +601,13 @@ input[name=tabmenu] {
     display: flex;
     flex-direction: column-reverse;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.336);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.Card:hover {
+    transform: scale(110%);
+    transition: all 0.2s ease-in-out;
 }
 
 .Card_background:nth-of-type(1) .Card { background-image: url(img/food/image\ 86.png);}
